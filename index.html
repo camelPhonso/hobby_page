@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Straight Edge</title>
+    </head>
+    <body>
+        <header>
+            <h1>straight edge</h1>
+            <ul id="navbar">
+                <li class="nav-link"><a href = #meaning>Meaning</a></li>
+                <li class="nav-link"><a href = #history>History</a></li>
+            </ul>
+        </header>
+        <main>
+            <section id="galery">
+                <div class="frame">
+                    <img class="picture" alt="A group of youths enjoy a punk-hardcore show in the straight edge ethos" src="https://brokenrecordpress.files.wordpress.com/2016/06/earthcrisis.jpg?w=640">
+                    <label>Punk Hardcore is at the center of Straight Edge culture</label>
+                </div>
+                <div class="frame">
+                    <img class="picture" alt="Promo shot of Punk-hardcore band 'Minor Threat'" src="https://lastfm.freetls.fastly.net/i/u/ar0/59608069491097a99d0c69737e0451e5.jpg">
+                    <label>Punk band 'Minor Threat' never meant to start a movement but were the first to coin the term</label>
+                </div>
+                <div class="frame">
+                    <img class="picture" alt="Two persons mark each others hands with big 'x's in black marker to signify they are Straight Edge" src="https://diyconspiracy.net/wp-content/uploads/2016/10/straight-edge-x-mark.jpg">
+                    <label>'X' is used as a universal simbol for Straight Edge</label>
+                </div>
+                <div class="frame">
+                    <img class="picture" alt="Cover art for the EP titled 'Vegan for the animals' by straight edge band 'Earth Crisis'" src="https://f4.bcbits.com/img/a3654857395_65">
+                    <label>Straight Edge is a cultural phenomenon that has stretched to many social areas</label>
+                </div>
+            </section>
+            <section id="meaning">
+                <h2><a>The meaning of Straight Edge</a></h2>
+                <p>
+                    Straight Edge has come to mean many different things over time but it's core has always been a personal stand against social pressure that resonated strongly with young punks and other disenfranchised subcultures.
+                </p>
+                <p>
+                    The first demonstration of this mindset came from Ian Mackaye (vocalist for Minor Threat) who felt disconnected from punk culture in its increasing pressure for an unhealthy relationship with alcohol and drugs as a mark of rebellion.
+                </p>
+                <p>
+                    To express his view, Ian Mackaye wrote the lyrics for the song 'Straight Edge', where he expressed a desire to be understood and accepted in his rejection of this aspect of what punk culture had become.
+                </p>
+                <p>
+                    From these lyrics grew a movement much bigger than Mackaye had anticipated, or wished for. The lyrics resonated with many young people in a stronger way than the band had imagined and lead to the rise of an ethos that has lived on beyond the punk music and subculture.
+                </p>
+                <p>
+                    As mentioned above, the movement has taken may forms over the years and can be expressed differently by everyone, but in its simplest expression, deaming oneself to be Straight Edge (or, <i>claiming edge</i>) represents a public declaration of ones choice to:
+                </p>
+                <ul id="claim-list">
+                    <li class="claim">not drink alcohol;</li>
+                    <li class="claim">not consume mind-altering drugs;</li>
+                    <li class="claim">not consume tobbaco.</li>
+                </ul>
+                <p>
+                    As a movement, straight edge has been embraced by many counter-cultures and has often become entangled with other social stances like, most commonly, veganism.
+                </p>
+            </section>
+            <section id="history">
+                <h2>The history of Straight Edge</h2>
+                <p>
+                    The history of the movement since its inception is rich and has led to many, distinguishable, interpretations arising. You can learn a lot about it from the National Geographic's documentary, "Inside Straight Edge", linked <a href="https://www.youtube.com/watch?v=IMVhsKtdFFo">here</a>.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>Today is <span id="today"></span></p>
+                    <script>
+                        date = new Date();
+                        year = date.getFullYear();
+                        month = date.getMonth();
+                        day = date.getDate();
+                        document.getElementById('today').innerHTML=`${day}/${month}/${year}`;
+                    </script>
+             <p class="scronly">developed by camelPhonso</p>
+        </footer>
+    </body>
+</html>

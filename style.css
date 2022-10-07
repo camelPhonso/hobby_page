@@ -1,0 +1,168 @@
+*{
+    box-sizing:border-box;
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+}
+
+/*proto classes to help me edit*/
+:root{
+    --base:#b0b8b4ff;
+    --highlights:#fc766aff;
+    --darks:#184a45ff;
+}
+
+.bordered{
+    border:5px solid black;
+}
+
+.scronly{
+    color: transparent;
+    margin:-1;
+    position:fixed;
+}
+
+p{
+    text-align: justify;
+    width:90%;
+    margin: 0.5rem auto;
+    text-indent: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color:var(--darks);
+}
+
+a:hover{
+    color: var(--highlights);
+}
+
+a:active{
+    font-weight: bold;
+}
+
+h2{
+    text-indent: 5vw;
+    width:95%;
+    margin:auto;
+    margin-top:3rem;
+    margin-bottom:1.5rem;
+    background-color: var(--highlights);
+    padding-top: 0.5rem;
+}
+
+/*Styling the header*/
+header{
+    background-color: var(--base);
+    opacity: 100%;
+    padding:0 3rem;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height:10vh;
+    width: 100vw;
+    object-fit:cover;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    left:0;
+    letter-spacing: normal;
+}
+
+/*editing the navbar so it links to the rest of the page*/
+#navbar{
+    display: flex;
+    flex-grow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 1em;
+}
+
+/*edit main as a grid display and keep content at center*/
+body{
+    display:grid;
+    grid-template-columns: 1fr 80vw 1fr;
+    margin-top: 10vh;
+    margin-bottom:5vh;
+    background:repeating-linear-gradient(
+        45deg,
+        var(--darks),
+        var(--darks) 20px,
+        transparent 20px,
+        transparent 40px
+    ),
+    repeating-linear-gradient(
+        -45deg,
+        white,
+        white 20px,
+        var(--darks) 20px,
+        var(--darks) 40px
+    );
+}
+
+main{
+    grid-column: 2;
+    background-color: var(--base);
+}
+
+/*format the picture gallery to scroll along the top of main*/
+#galery{
+    height: 50vh;
+    width:100%;
+    display:flex;
+    column-gap: 0.5rem;
+    flex-flow: row nowrap;
+    overflow: scroll;
+}
+
+.frame{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    align-items:center;
+    font-size: 0.8rem;
+    text-align:center;
+    align-content:flex-start;
+    padding: 2rem 0;
+}
+
+.picture{
+    display:block;
+    max-width:80vw;
+    height:80%;
+    object-fit: cover;
+}
+
+.frame label{
+    height:10%;
+}
+
+/*meaning section*/
+#meaning{
+    margin:auto;
+}
+
+#claim-list{
+    margin:auto;
+    text-indent: 10%;
+}
+
+.claim{
+   list-style:none;
+}
+
+/*styling the footer*/
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    height: 5vh;
+    width:100vw;
+    background-color: var(--highlights);
+}
