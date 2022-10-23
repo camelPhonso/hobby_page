@@ -71,7 +71,7 @@
                     <script>
                         date = new Date();
                         year = date.getFullYear();
-                        month = date.getMonth();
+                        month = date.getMonth()+1;
                         day = date.getDate();
                         document.getElementById('today').innerHTML=`${day}/${month}/${year}`;
                     </script>
